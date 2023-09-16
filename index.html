@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="./logos-images/rick-and-morty-logo.webp" type="image/x-icon" />
+
+		<title>Rick and Morty API</title>
+	</head>
+	<body>
+		<header id="logoheader">
+			<img src="./logos-images/logo animado.gif" alt="" />
+		</header>
+		<main>
+			<section class="chars">
+				<div id="divSearch">
+					<img src="./logos-images/icone-loupe-gris.png" alt="Buscar..." />
+					<input type="text" id="search" placeholder="Digite por nome do personagem" class="filter" />
+					<img id="icon" src="./logos-images/logo-min.svg" alt="" srcset="" />
+				</div>
+				<div class="filters">
+					<select name="species" id="species" class="filter">
+						<option value="" default>Espécie</option>
+						<option value="Animal">Animal</option>
+						<option value="Alien">Alien</option>
+						<option value="Disease">Doença</option>
+						<option value="Unknown">Desconhecido</option>
+						<option value="Human">Humano</option>
+						<option value="Humanoid">Humanoide</option>
+						<option value="Mythological">Mitológico</option>
+						<option value="Poopybutthole">Poopybutthole</option>
+						<option value="Robot">Robo</option>
+					</select>
+					<select name="gender" id="gender" class="filter">
+						<option value="">Gênero</option>
+						<option value="Female">Feminino</option>
+						<option value="Male">Masculino</option>
+						<option value="Genderless">Sem Gênero</option>
+						<option value="unknown">Desconhecido</option>
+					</select>
+					<select name="status" id="status" class="filter">
+						<option value="">Status</option>
+						<option value="Alive">Vivo</option>
+						<option value="Dead">Morto</option>
+						<option value="unknown">Desconhecido</option>
+					</select>
+					<select name="origim" id="location" class="filter">
+						<option value="">Planeta de Origem</option>
+					</select>
+				</div>
+				<div class="chars-container"></div>
+			</section>
+		</main>
+		
+		
+		<div id="pagination" class="pagination"></div>
+		<div id="btns" class="fixed-nav">
+			<img src="./logos-images/gif-portal-unscreen.gif" alt="Previous" id="previous-page" onclick="previousPage()" />
+			<img src="./logos-images/gif-unscreen.gif" alt="Next" id="next-page" onclick="nextPage()" />
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
